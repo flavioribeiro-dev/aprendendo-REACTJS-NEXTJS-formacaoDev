@@ -1,10 +1,11 @@
-export default function Cabecalho() {
+export default function Cabecalho(props: any) {
     return (
-        <div className={`
-            flex justify-center items-center
-            bg-purple-500 h-36 text-3xl rounded-lg
+        <header className={`
+            flex flex-col justify-center items-center
+            bg-purple-500 h-36 rounded-lg
         `}>
-            Cabeçalho
-        </div>
+            <h1 className="text-3xl font-bold">{props.titulo}</h1>
+            <h3 className="pt-3 text-xl">{props.subtitulo}</h3>
+        </header>
     )
 }

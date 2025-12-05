@@ -8,8 +8,12 @@ export default function Page() {
             flex flex-col gap-4
             p-4 h-screen
         `}>
-            <Cabecalho />
+            <Cabecalho
+                titulo="Minha primeira página" 
+                subtitulo="Melhor App da web"/>
+
             <Conteudo />
+            
             <Rodape />
         </div>
     )
