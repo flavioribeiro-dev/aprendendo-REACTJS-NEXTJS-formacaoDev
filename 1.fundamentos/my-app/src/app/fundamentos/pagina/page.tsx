@@ -1,12 +1,16 @@
 import Cabecalho from "@/_components/Cabecalho";
+import Conteudo from "@/_components/Conteudo";
+import Rodape from "@/_components/Rodape";
 
 export default function Page() {
     return (
         <div className={`
-            p-4
+            flex flex-col gap-4
+            p-4 h-screen
         `}>
             <Cabecalho />
-            Montar uma página
+            <Conteudo />
+            <Rodape />
         </div>
     )
 }
